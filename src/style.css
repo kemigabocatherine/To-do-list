@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+html body {
+  background: #e7e0e075;
+}
+
+body {
+  font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: baseline;
+}
+
+li.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+
+li div {
+  display: flex;
+  align-items: baseline;
+}
+
+.card {
+  position: absolute;
+  top: 130px;
+  left: 5%;
+  width: 90%;
+  border: 0;
+}
+
+i {
+  color: #b9b3b3;
+}
+
+input.checkbox-class {
+  border-color: #b9b3b3;
+}
+
+.add {
+  font-style: italic;
+  color: #b9b3b3;
+}
+
+p.heading {
+  font-size: 20px;
+  font-weight: 10;
+}
+
+p.clear {
+  display: flex;
+  margin: auto;
+  color: #7e7a7a;
+}
+
+li#clear {
+  background: #e7e0e075;
+}
