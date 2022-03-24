@@ -9,10 +9,6 @@ A simple list app that adds and removes activities
 - JS
 - Webpack
 
-## Live Demo
-
-Click [HERE](https://kemigabocatherine.github.io/To-do-list/) to view the project.
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -39,7 +35,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a :star: if you like this project!
 
 ## Acknowledgments
 
