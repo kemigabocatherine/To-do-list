@@ -3,12 +3,13 @@
   border: 0;
   padding: 0;
 }
-html body {
-  background: #e7e0e075;
-}
 
 body {
   font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+}
+
+html body {
+  background: #e7e0e075;
 }
 
 .list-group-item {
