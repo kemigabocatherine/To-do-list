@@ -9,7 +9,7 @@ const items = [
     index: 1,
   },
   {
-    description: 'Shop for groceries',
+    description: 'Clean the house',
     completed: 'check box',
     index: 2,
   },

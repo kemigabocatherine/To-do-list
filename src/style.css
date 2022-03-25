@@ -63,3 +63,7 @@ p.clear {
 li#clear {
   background: #e7e0e075;
 }
+
+li {
+  list-style-type: none;
+}
