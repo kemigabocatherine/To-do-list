@@ -8,11 +8,13 @@ const items = [
     completed: 'check box',
     index: 1,
   },
+
   {
     description: 'Clean the house',
     completed: 'check box',
     index: 2,
   },
+
   {
     description: 'Study and do assignments',
     completed: 'check box',
