@@ -68,7 +68,7 @@ p.heading {
   font-weight: 10;
 }
 
-p.clear {
+span.clear {
   display: flex;
   margin: auto;
   color: #7e7a7a;
