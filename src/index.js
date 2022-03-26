@@ -1,40 +1,60 @@
+/* eslint-disable max-classes-per-file */
 /* eslint-disable no-unused-vars */
 import _ from 'lodash';
 import './style.css';
+import todos from './modules/task.js';
+import store from './modules/store.js';
+import { todoInput } from './modules/elements.js';
 
-const items = [
-  {
-    description: 'Clean the house',
-    completed: 'check box',
-    index: 1,
-  },
+if (store('localStorage')) {
+  todos.checkStorage();
 
-  {
-    description: 'Clean the house',
-    completed: 'check box',
-    index: 2,
-  },
+  todos.showTodos();
 
-  {
-    description: 'Study and do assignments',
-    completed: 'check box',
-    index: 3,
-  },
-];
+  for (let i = 0; i < todos.todos.length; i += 1) {
+    const removeButtons = document.querySelectorAll('.remove-button');
+    removeButtons[i].addEventListener('click', () => {
+      todos.delete(i);
+    });
+  }
 
-const activityList = document.getElementById('tasklist');
+  for (let i = 0; i < todos.todos.length; i += 1) {
+    const checkboxes = document.querySelectorAll('.checkbox');
+    checkboxes[i].addEventListener('change', (e) => {
+      if (e.target.checked) {
+        todos.complete(i, true);
+      } else {
+        todos.complete(i, false);
+      }
+      todos.save();
+    });
+  }
 
-items.forEach((item, index) => {
-  const listItem = document.createElement('li');
-  listItem.setAttribute('class', 'list-group-item');
+  for (let i = 0; i < todos.todos.length; i += 1) {
+    const todoTexts = document.querySelectorAll('.todo-text');
+    todoTexts[i].addEventListener('keydown', (event) => {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+      }
+    });
+    todoTexts[i].addEventListener('input', () => {
+      todos.edit(i, todoTexts[i].innerHTML);
+      todos.save();
+    });
+  }
 
-  listItem.innerHTML = `
-    <div>
-      <input class = "checkbox_class" type = "checkbox">
-      <p class="task pl-3 pt-1">${items[index].description}</p>
-    </div>
-    <i class ="fa fa-trash justify-content-right"></i>
-  `;
-
-  activityList.appendChild(listItem);
-});
+  todoInput.addEventListener('keyup', (event) => {
+    if (todoInput.value !== '') {
+      if (event.keyCode === 13) {
+        todos.add({
+          description: todoInput.value,
+          isComplete: false,
+          index: todos.todos.length + 1,
+        });
+        todos.save();
+        todoInput.value = '';
+        window.location.reload();
+      }
+    }
+  });
+}
