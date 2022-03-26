@@ -1,6 +1,6 @@
 # To-do-list
 
-A simple list app that adds and removes activities
+A simple list app that allows a user to add and remove tasks.
 
 ## Built With
 
