@@ -35,7 +35,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
-Give a :star: if you like this project!
+Give a :star: or a :+1:if you like this project!
 
 ## Acknowledgments
 
