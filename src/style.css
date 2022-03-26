@@ -12,26 +12,21 @@ html body {
   background: #e7e0e075;
 }
 
-.list-group-item {
+.list-item {
   display: flex;
   align-items: baseline;
 }
 
-li.list-group-item {
+li.list-item {
   display: flex;
-  justify-content: space-between;
   height: 60px;
 }
 
-li div {
-  display: flex;
-  align-items: baseline;
-}
-
 .card {
-  position: absolute;
-  top: 130px;
-  left: 5%;
+  margin-top: 10%;
+  margin-bottom: auto;
+  margin-left: 5%;
+  margin-right: 5%;
   width: 90%;
   border: 0;
 }
@@ -47,6 +42,25 @@ input.checkbox-class {
 .add {
   font-style: italic;
   color: #b9b3b3;
+  height: 60px;
+  justify-content: space-between;
+}
+
+header.list-item {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  border: 1px solid #e7e0e075;
+}
+
+p.list-item {
+  height: 60px;
+  border: 1px solid #e7e0e075;
+  margin-bottom: 0;
+}
+
+input#new-task {
+  font-style: italic;
 }
 
 p.heading {
@@ -60,10 +74,28 @@ p.clear {
   color: #7e7a7a;
 }
 
-li#clear {
+button#clear {
   background: #e7e0e075;
+  display: flex;
 }
 
 li {
   list-style-type: none;
+}
+
+ul#tasklist {
+  margin-bottom: 0;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 60px;
+  border: 1px solid #e7e0e075;
+}
+
+.remove-button {
+  background: #fff;
+  color: gray;
 }
