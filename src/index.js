@@ -4,19 +4,24 @@ import _ from 'lodash';
 import './style.css';
 import todos from './modules/task.js';
 import store from './modules/store.js';
-import { todoInput } from './modules/elements.js';
+import { clear, todoInput } from './modules/elements.js';
+import completed from './modules/completed.js';
 
 if (store('localStorage')) {
   todos.checkStorage();
 
   todos.showTodos();
 
+  // Remove
   for (let i = 0; i < todos.todos.length; i += 1) {
     const removeButtons = document.querySelectorAll('.remove-button');
     removeButtons[i].addEventListener('click', () => {
       todos.delete(i);
     });
   }
+
+  // Completed
+  completed(todos);
 
   for (let i = 0; i < todos.todos.length; i += 1) {
     const checkboxes = document.querySelectorAll('.checkbox');
@@ -56,5 +61,12 @@ if (store('localStorage')) {
         window.location.reload();
       }
     }
+  });
+
+  // Remove completed to-dos
+  clear.addEventListener('click', () => {
+    todos.clearCompleted();
+    todos.save();
+    window.location.reload();
   });
 }
