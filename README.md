@@ -1,6 +1,6 @@
 # To-do-list
 
-A simple list app that adds and removes activities
+A simple list app that allows a user to add and remove tasks.
 
 ## Built With
 
@@ -35,7 +35,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
-Give a :star: if you like this project!
+Give a :star: or a :+1:if you like this project!
 
 ## Acknowledgments
 
