@@ -34,6 +34,13 @@ class Todos {
     this.todos[index].description = description;
   }
 
+  clearCompleted = () => {
+    this.todos = this.todos.filter((todo) => todo.isComplete === false);
+    for (let i = 0; i < this.todos.length; i += 1) {
+      this.todos[i].index = i + 1;
+    }
+  }
+
   checkStorage = () => {
     if (window.localStorage.getItem('todos') !== null) {
       const array = JSON.parse(window.localStorage.getItem('todos'));
