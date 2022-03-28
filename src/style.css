@@ -99,3 +99,7 @@ ul#tasklist {
   background: #fff;
   color: gray;
 }
+
+.remove-button:active {
+  color: #ff0000c7;
+}
