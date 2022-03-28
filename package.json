@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/kemigabocatherine/To-do-list/issues"
   },
-  "homepage": "https://kemigabocatherine.github.io/To-do-list",
+  "homepage": "https://github.com/kemigabocatherine/To-do-list#readme",
   "devDependencies": {
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
