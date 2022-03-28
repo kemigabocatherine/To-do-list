@@ -4,7 +4,7 @@
   "description": "A simple list app that adds and removes activities",
   "private": true,
   "scripts": {
-    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -28,7 +28,6 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "gh-pages": "^3.2.3",
     "lodash": "^4.17.21"
   }
 }
