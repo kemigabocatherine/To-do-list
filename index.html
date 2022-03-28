@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  <title>To-do list</title>
+<script defer src="main.js"></script></head>
+<body>
+  <div class="card">
+    <header class="list-item pt-3 pl-3 pr-3">
+      <p class="heading">
+        Today's To Do
+      </p>
+      <i class="fa fa-refresh"></i>
+    </header>
+    <p class=" list-item add pt-3 pl-3 pr-3">
+      <input type="text" placeholder="Add to your list..." id="new-task" >
+      <i class="fas fa-long-arrow-alt-left " id="add"></i>
+    </p>
+    <ul id="tasklist"></ul>
+    <button class="list-group-item" id="clear" type="button">
+      <span class="clear clear-btn" id="clear-btn">Clear all completed</span>
+    </button>
+  </div>
+  <script src="https://kit.fontawesome.com/2bc8a8d57a.js" crossorigin="anonymous"></script>
+</body>
+</html>
