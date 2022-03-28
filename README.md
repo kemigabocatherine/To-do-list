@@ -9,6 +9,10 @@ A simple list app that allows a user to add and remove tasks.
 - JS
 - Webpack
 
+## Live Demo
+
+Click [To-do-list](https://kemigabocatherine.github.io/To-do-list/) to see the page.
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
