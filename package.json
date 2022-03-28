@@ -4,7 +4,7 @@
   "description": "A simple list app that adds and removes activities",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/kemigabocatherine/To-do-list/issues"
   },
-  "homepage": "https://github.com/kemigabocatherine/To-do-list#readme",
+  "homepage": "https://kemigabocatherine.github.io/To-do-list/",
   "devDependencies": {
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
@@ -28,6 +28,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "lodash": "^4.17.21"
   }
 }
